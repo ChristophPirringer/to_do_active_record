@@ -1,5 +1,5 @@
 ENV['RACK_ENV'] = 'test'
-require 'rpsec'
+require 'rspec'
 require 'pg'
 require 'sinatra/activerecord'
 require 'task'

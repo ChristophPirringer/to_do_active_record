@@ -1,0 +1,11 @@
+<h1>Please add a task</h1>
+
+<form action="/tasks/<%= @list %>" method ="post">
+	<div class="form-group">
+		<label for="description">Please add a task description</label>
+
+		<input for="description" name="description">
+	</div>
+	<button type="submit" class="btn btn-success">Submit</button>
+
+</form>

@@ -1,0 +1,22 @@
+
+<h1><%= @list.name() %></h1>
+
+<% if @list.tasks().any?() %>
+	<h3>Here are all the tasks in this list:</h3>
+
+	<ul>
+		<% @list.tasks().each() do |task| %>
+		<li><%= task.description() %></li>
+		<% end %>
+	</ul>
+
+<% else %>
+	<h3>There are no tasks on this list!</h3>
+	<% end %>
+
+<div class="container">
+	<a href="/">Home</a>
+	<a href="/lists">View All Lists</a>
+	<a href="/lists/new">Add New List</a>
+	<a href="/tasks/<%= @list.id() %>">Add New Task</a>
+</div>
